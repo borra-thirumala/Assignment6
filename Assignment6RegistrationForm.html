@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: darksalmon;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form>
+      <h2>Registration Form</h2>
+      <label for="firstname">Firstname:</label>
+      <input
+        type="text"
+        name="fname"
+        id="firstname"
+        required
+        placeholder="Eg:Varsha"
+        autofocus
+      /><br /><br />
+      <label for="lastname">Lastname:</label>
+      <input type="text" name="lname" id="lastname" disabled /><br /><br />
+      <label for="surname">Surname:</label>
+      <input
+        type="text"
+        name="sname"
+        id="surname"
+        placeholder="Eg:V"
+      /><br /><br />
+      <label>EmailId:</label>
+      <input
+        type="email"
+        name="mail"
+        id="mail"
+        required
+        placeholder="zzz@gmail.com"
+      /><br /><br />
+      <label>Mobile Number:</label>
+      <input
+        type="tel"
+        name="mobile"
+        id="mobile"
+        placeholder="1234-567-890"
+        pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}"
+        required
+      /><br /><br />
+      <label for="pswd">Password:</label>
+      <input type="password" name="pswd" id="pswd" required /><br /><br />
+      <label>Aadhar Number:</label>
+      <input
+        type="tel"
+        name="aadhar"
+        id="aadhar"
+        pattern="[0-9]{12}"
+        required
+      /><br /><br />
+      <label>Pan Number:</label>
+      <input
+        type="tel"
+        name="pan"
+        id="pan"
+        pattern="[0-9]{A-Z}{10}"
+        required
+      /><br /><br />
+      <label>DOB:</label>
+      <input type="datetime-local" /><br /><br />
+      <label>Gender:</label>
+      <input type="radio" name="gender" values="Female" />Female
+      <input type="radio" name="gender" values="Male" />Male<br /><br />
+      <label>Address Line1:</label>
+      <input
+        type="text"
+        name="address"
+        id="address"
+        required
+        placeholder="Eg:TamilNadu"
+      /><br /><br />
+      <label>Address Line2:</label>
+      <input
+        type="text"
+        name="address"
+        id="address"
+        required
+        placeholder="Eg:Chennai"
+      /><br /><br />
+
+      <h4>Academic Details</h4>
+      <label>Are you Graduated</label>
+      <input type="radio" name="graduated" values="Yes" />Yes
+      <input type="radio" name="graduated" values="No" />No<br /><br />
+      <label>Btech Cgpa:</label>
+      <input
+        type="tel"
+        name="cgpa"
+        id="cgpa"
+        pattern="[7-10]{3}required"
+      /><br /><br />
+      <label>Senior Secondary Cgpa:</label>
+      <input type="tel" name="cgpa" id="cgpa" pattern="[7-10]" /><br /><br />
+      <label>Secondary Cgpa:</label>
+      <input type="tel" name="cgpa" id="cgpa" pattern="[7-10]" /><br /><br />
+
+      <label>Skills:</label><br /><br />
+      <input type="checkbox" name="skills" values="Yes" />HTML
+      <input type="checkbox" name="skills" values="Yes" />CSS
+      <input type="checkbox" name="skills" values="Yes" />JavaScript
+      <input type="checkbox" name="skills" values="Yes" />Python
+      <input type="checkbox" name="skills" values="Yes" />Java<br /><br />
+      <label>Mention your hobbies:</label><br /><br />
+      <textarea rows="4" cols="30"></textarea><br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
